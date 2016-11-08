@@ -4,15 +4,20 @@
 .background td { padding: 0;          }
 .lava          { background: rgb(232, 141, 13); }
 .wall          { background: rgb(17, 12, 160);   }
-.floater	{ background: rgb(32, 117, 11);	}
+.slowblock { background: rgb(32, 117, 11); }
+.fastblock { background: rgb(204, 16, 197) ;}
 
 .actor  { position: absolute;  }
 .player { background: white; }
 .coin { background: rgb(241, 229, 89); }
-.enemy { background: rgb(32, 117, 11); }
+
+.lost .player { background: rgb(160, 64, 64); }
+.won .player { box-shadow: -4px -7px 8px white, 4px -7px 8px white; }
+
 .game {
   overflow: hidden;
   max-width: 600px;
   max-height: 450px;
   position: relative;
 }
+
